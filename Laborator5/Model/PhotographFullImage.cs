@@ -8,13 +8,12 @@ using System.Threading.Tasks;
 
 namespace Laborator5.Model
 {
-    public class Product
+    public class PhotographFullImage
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int SKU { get; set; }
-        public string Description { get; set; }
-        public decimal Price { get; set; }
-        public string ImageURL { get; set; }
+        public int PhotoId { get; set; }
+        public byte[] HighResolutionBits { get; set; }
+        [ForeignKey("PhotoId")]
+        public virtual Photograph Photograph { get; set; }
     }
 }
