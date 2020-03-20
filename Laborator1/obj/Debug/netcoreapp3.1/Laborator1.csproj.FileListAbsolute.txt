@@ -1,0 +1,11 @@
+C:\Users\rober\OneDrive\Desktop\TSP.NET\Laborator1\Laborator1\bin\Debug\netcoreapp3.1\Laborator1.exe
+C:\Users\rober\OneDrive\Desktop\TSP.NET\Laborator1\Laborator1\bin\Debug\netcoreapp3.1\Laborator1.deps.json
+C:\Users\rober\OneDrive\Desktop\TSP.NET\Laborator1\Laborator1\bin\Debug\netcoreapp3.1\Laborator1.runtimeconfig.json
+C:\Users\rober\OneDrive\Desktop\TSP.NET\Laborator1\Laborator1\bin\Debug\netcoreapp3.1\Laborator1.runtimeconfig.dev.json
+C:\Users\rober\OneDrive\Desktop\TSP.NET\Laborator1\Laborator1\bin\Debug\netcoreapp3.1\Laborator1.dll
+C:\Users\rober\OneDrive\Desktop\TSP.NET\Laborator1\Laborator1\bin\Debug\netcoreapp3.1\Laborator1.pdb
+C:\Users\rober\OneDrive\Desktop\TSP.NET\Laborator1\Laborator1\obj\Debug\netcoreapp3.1\Laborator1.csprojAssemblyReference.cache
+C:\Users\rober\OneDrive\Desktop\TSP.NET\Laborator1\Laborator1\obj\Debug\netcoreapp3.1\Laborator1.AssemblyInfoInputs.cache
+C:\Users\rober\OneDrive\Desktop\TSP.NET\Laborator1\Laborator1\obj\Debug\netcoreapp3.1\Laborator1.AssemblyInfo.cs
+C:\Users\rober\OneDrive\Desktop\TSP.NET\Laborator1\Laborator1\obj\Debug\netcoreapp3.1\Laborator1.dll
+C:\Users\rober\OneDrive\Desktop\TSP.NET\Laborator1\Laborator1\obj\Debug\netcoreapp3.1\Laborator1.pdb
