@@ -4,37 +4,53 @@ using System.Data.Entity;
 
 namespace PostComment
 {
+
     public partial class Post
     {
+
         public bool AddPost()
         {
+
             using (Model1Container ctx = new Model1Container())
             {
+
                 bool bResult = false;
                 if (this.PostId == 0)
                 {
+
                     var it = ctx.Entry<Post>(this).State = EntityState.Added;
                     ctx.SaveChanges();
                     bResult = true;
+
                 }
-                return bResult; 
+
+                return bResult;
+                
             }
+
         }
+
         public Post UpdatePost(Post newPost)
         {
+
             using (Model1Container ctx = new Model1Container())
             {
+
                 Post oldPost = ctx.Posts.Find(newPost.PostId);
                 if (oldPost == null) // nu exista in bd
                 {
+
                     return null;
+
                 }
                 oldPost.Description = newPost.Description;
                 oldPost.Domain = newPost.Domain;
                 oldPost.Date = newPost.Date;
                 ctx.SaveChanges();
                 return oldPost;
+
             }
+
         }
         public int DeletePost(int id)
         {

@@ -44,13 +44,7 @@ namespace PostComment.APIStatic
             }
         }
 
-        ///<summary>
-        ///Returnez un Post si toate Comment-urile asociate lui
-        ///</summary>
-        ///<param name="id">
-        ///</param>///
-        ///<returns>
-        ///</returns>
+       
 
         public static Post GetPostById(int id) 
         { 
@@ -62,8 +56,7 @@ namespace PostComment.APIStatic
             } 
         }
 
-        ///<summary>///Returnez toate Post-urile si Comment-urile corespunzatoare///</summary>///<returns></returns>
-        ///
+        
 
 
         public static List<Post> GetAllPosts() 
