@@ -9,19 +9,24 @@
 //------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks; 
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Linq;
+using System.Drawing;
+
+
 namespace PostComment
 {
     using System.Runtime.Serialization;
     
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+
     [System.Runtime.Serialization.DataContractAttribute(Name="Post", Namespace="http://schemas.datacontract.org/2004/07/PostComment", IsReference=true)]
+
     public partial class Post : object, System.Runtime.Serialization.IExtensibleDataObject
     {
         
@@ -116,7 +121,9 @@ namespace PostComment
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+
     [System.Runtime.Serialization.DataContractAttribute(Name="Comment", Namespace="http://schemas.datacontract.org/2004/07/PostComment", IsReference=true)]
     public partial class Comment : object, System.Runtime.Serialization.IExtensibleDataObject
     {
@@ -199,7 +206,9 @@ namespace PostComment
 
 
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+
 [System.ServiceModel.ServiceContractAttribute(ConfigurationName="IPostComment")]
+
 public interface IPostComment
 {
     
@@ -252,13 +261,17 @@ public interface IPostComment
     System.Threading.Tasks.Task<PostComment.Comment> GetCommentByIdAsync(int id);
 }
 
+
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+
 public interface IPostCommentChannel : IPostComment, System.ServiceModel.IClientChannel
 {
 }
 
 [System.Diagnostics.DebuggerStepThroughAttribute()]
+
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+
 public partial class PostCommentClient : System.ServiceModel.ClientBase<IPostComment>, IPostComment
 {
     
@@ -272,17 +285,19 @@ public partial class PostCommentClient : System.ServiceModel.ClientBase<IPostCom
     }
     
     public PostCommentClient(string endpointConfigurationName, string remoteAddress) : 
-            base(endpointConfigurationName, remoteAddress)
+            base(endpointConfigurationName: endpointConfigurationName, remoteAddress)
     {
     }
     
     public PostCommentClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
-            base(endpointConfigurationName, remoteAddress)
+            base(endpointConfigurationName: endpointConfigurationName, remoteAddress)
     {
     }
     
-    public PostCommentClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
-            base(binding, remoteAddress)
+    public PostCommentClient(System.ServiceModel.Channels.Binding binding,
+                             System.ServiceModel.EndpointAddress remoteAddress) : 
+            base(binding,
+                 remoteAddress)
     {
     }
     
@@ -300,12 +315,9 @@ public partial class PostCommentClient : System.ServiceModel.ClientBase<IPostCom
     {
         return base.Channel.UpdatePost(post);
     }
-    
-    public System.Threading.Tasks.Task<PostComment.Post> UpdatePostAsync(PostComment.Post post)
-    {
-        return base.Channel.UpdatePostAsync(post);
-    }
-    
+
+    public System.Threading.Tasks.Task<PostComment.Post> UpdatePostAsync(PostComment.Post post) => base.Channel.UpdatePostAsync(post);
+
     public int DeletePost(int id)
     {
         return base.Channel.DeletePost(id);
