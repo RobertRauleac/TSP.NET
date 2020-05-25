@@ -1,0 +1,43 @@
+﻿@page
+@model WebApplication1.Pages.SearchGalleryModel
+@{
+    ViewData["Title"] = "SearchGallery";
+}
+
+<h1>SearchGallery</h1>
+
+<br />
+<label style="font-size:25px">Search in gallery for pictures/videos :</label>
+
+<form>
+    <input style="width: 30%; height: 40px; text-align: left;" type="text" placeholder="Search by field" asp-for="DbSearch" />
+    <input style="height: 40px;" type="submit" value="Search" />
+</form>
+
+
+
+@foreach (var item in Model.element)
+{
+<div style="display:block; margin-top:20px;">
+    <div>
+        <img src="@item.Path" style="display:inline-block; height:150px; width:105px;" alt="Picture">
+    </div>
+    <div style="display:inline-block;">
+        <div>
+            <label style="display:block;">Id :</label>
+            <h4 style="display:inline-block;">@Html.DisplayFor(modelItem => item.Id)</h4>
+        </div>
+        <div>
+            <label style="display:block;">Name :</label>
+            <h4 style="display:inline-block;">@Html.DisplayFor(modelItem => item.Name)</h4>
+        </div>
+        <div>
+            <label style="display:block;">Date :</label>
+            <h4 style="display:inline-block;">@Html.DisplayFor(modelItem => item.Date)</h4>
+        </div>
+    </div>
+    
+
+</div>
+}
+
